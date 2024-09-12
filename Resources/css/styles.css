@@ -265,6 +265,10 @@ footer .box-right{
     .container-1 {
         flex-wrap: wrap; 
     }
+    .container-1 img{
+        margin: 0 0 32px 0;
+        width: 100%;
+    }
     .nav-links, nav p{
         display: none;
     }

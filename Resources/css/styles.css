@@ -95,6 +95,7 @@ button {
     display: flex; /* Use flexbox to create a flex container */
     flex-direction: column; /* Stack items in a column */
    width: 40%;
+   margin-top: 32px;
     
 }
 
@@ -112,11 +113,14 @@ button {
 }
 
 .smallbox-1, .smallbox-2, .smallbox-3{
-  padding: 16px;
+  padding: 0 16px;
   display: flex;
   color: rgb(74, 74, 74);
 }
 
+.smallbox-2, .smallbox-3{
+    margin-top: 16px;
+}
 .smallbox-1 .fullscreen img, .smallbox-2 .fullscreen img, .smallbox-3 .fullscreen img{
  width: 100%;
  height: auto;
@@ -128,10 +132,75 @@ button {
 }
 
 .container-2 .text{
-    padding-left: 16px;
+    
     width: 100%;
 }
 
+.container-2 h3{
+    margin-left: 16px;
+}
+
+/* Section Three */
+.section3{
+    text-align: center;
+    background-color: rgb(238, 236, 236);
+    color:rgb(74, 74, 74);
+    padding: 32px 0;
+}
+
+.container-row {
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+
+.container-row .inner-container{
+    padding-left: 72px;
+    padding-right: 72px;
+    display: flex;
+    margin-bottom: 32px;
+}
+  
+.container-row .coursebox {
+    flex: 1; /* Allow the coursebox to grow and shrink within the container */
+    max-width: 33%;/* Limit the maximum width of the coursebox */
+    box-sizing: border-box; /* Include padding in the width calculation */
+    margin: 0 16px 0 24px;
+    background-color: white;
+}
+
+.container-row .coursebox img {
+    flex: 1; /* Allow the coursebox to grow and shrink within the container */
+    max-width: 100%;/* Limit the maximum width of the coursebox */
+    
+}
+
+.container-row .coursebox h3, p{
+    margin-left: 16px;
+}
+
+.container-row .coursebox h3{
+    font-weight: bold;
+    color: rgb(74, 74, 74);
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.section3-mobile{
+    display: none;
+    margin-bottom: 32px;
+}
+
+.section3-mobile button{
+    background-color: rgb(238, 236, 236);
+    color: rgb(74, 74, 74);
+    font-size: large;
+    margin: 4px 16px;
+    text-align: left;
+    padding: 16px;
+}
 
 @media (max-width: 768px) {
     .container-1 {
@@ -149,12 +218,30 @@ button {
     .container-2 .box-right .smallbox-1, .smallbox-2, .smallbox-3{
         display: flex;
         flex-direction: column;
+        background-color: white;
     }
     .container-2 .box-right .fullscreen img{
         display: none;
     }
     .container-2 .box-right .mobile img{
         display: flex;
-        width: 100%
+        width: 100%;
+    }
+    .section3{
+        background-color: white;
+        padding-top: 32px;
+        padding-bottom: 16px;
+    }
+    .section3 h2{
+        padding: 0;
+        margin: 0;
+    }
+    .container-row{
+        display: none;
+        background-color: white;
+    }
+    .section3-mobile{
+        display: flex;
+        flex-direction: column;
     }
 }

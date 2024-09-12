@@ -53,20 +53,84 @@ nav .company img{
     flex-direction: column; /* Stack items in a column */
     text-align: left;
     padding-right: 10%;
+    padding-bottom: 32px;
     justify-content: center;
     margin-left: 16px;
     color: rgb(74, 74, 74)
 
 }
 
-.container-1 .textbox-1 h1{
+h1{
     margin: 0;
 }
 
-.container-1 .textbox-1 h3{
+h3, h5{
     font-weight: normal;
     margin-top: 32px;
 }
+
+button {
+    border: transparent;
+    color: white;
+    background-color: rgb(74, 74, 74);
+    padding: 8px 0;
+}
+
+/* Second section*/
+
+.container-2{
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.container-2 .box-left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0 24px;
+    margin-top: 32px;
+    color: rgb(74, 74, 74)
+}
+.container-2 .box-right {
+    display: flex; /* Use flexbox to create a flex container */
+    flex-direction: column; /* Stack items in a column */
+   width: 40%;
+    
+}
+
+.container-2 .box-right .mobile img{
+    display: none;
+}
+.container-2 .box-right a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.container-2 h5{
+    display: flex;
+    margin: 0;
+}
+
+.smallbox-1, .smallbox-2, .smallbox-3{
+  padding: 16px;
+  display: flex;
+  color: rgb(74, 74, 74);
+}
+
+.smallbox-1 .fullscreen img, .smallbox-2 .fullscreen img, .smallbox-3 .fullscreen img{
+ width: 100%;
+ height: auto;
+ padding-right: 16px;
+}
+
+.smallbox-3{
+    background-color: lightgrey;
+}
+
+.container-2 .text{
+    padding-left: 16px;
+}
+
 
 @media (max-width: 768px) {
     .container-1 {
@@ -74,5 +138,25 @@ nav .company img{
     }
     .nav-links, nav .company p{
         display: none;
+    }
+    .container-2{
+        
+    }
+    .container-2 .box-left{
+        display: none;
+    }
+    .container-2 .box-right{
+        width: 100%;
+    }
+    .container-2 .box-right .smallbox-1, .smallbox-2, .smallbox-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-2 .box-right .fullscreen img{
+        display: none;
+    }
+    .container-2 .box-right .mobile img{
+        display: flex;
+        width: 100%
     }
 }

@@ -11,10 +11,10 @@ nav{
     width: 100%;
     height: 64px;
     background-color: white;
-    
-
-}
-
+    color: black;
+    z-index: 1;
+    box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.1);
+ }
 
 nav .icons{
     font-size: 32px;
@@ -35,22 +35,28 @@ nav .mobile-icons{
     display: none;
 }
 
-nav p{
+nav .nav-title{
     display: flex;
     align-items: center;
     font-size: x-large;
+    justify-content: flex-start;
+    text-transform: uppercase;
+    margin-left: 24px;
+}
+
+nav #Colmar{
+    font-weight: bold;
 }
 .nav-links{
     display: inline-flex;
-    float: right;
     align-items: center;
     margin-right: 24px;
 }
 
 .nav-links a{
-    float: right;
     text-decoration: none;
-    padding: 0 16px;
+    padding-left: 16px;
+    font-size: 16px;
     color: black;
 }
 
@@ -64,7 +70,9 @@ nav p{
     width:60%;
     margin: 32px 24px;
 }
-
+.container-1 button{
+    padding: 8px 0;
+}
 .container-1 .textbox-1 {
     display: flex; /* Use flexbox to create a flex container */
     flex-direction: column; /* Stack items in a column */
@@ -83,7 +91,7 @@ h1{
 
 h3, h5{
     font-weight: normal;
-    margin-top: 32px;
+    margin-top: 2em;
 }
 
 button {
@@ -93,10 +101,15 @@ button {
     padding: 8px 0;
 }
 
+button:hover{
+    background-color: rgb(101, 101, 101);
+    cursor: pointer;
+}
 /* Second section*/
 
 .container-2{
     display: flex;
+    padding-bottom: 32px;
 }
 
 .container-2 .box-left{
@@ -104,8 +117,7 @@ button {
     flex-direction: column;
     width: 60%;
     padding: 0 24px;
-    
-    color: rgb(74, 74, 74)
+    color: rgb(74, 74, 74);
 }
 .container-2 .box-right {
     display: flex; /* Use flexbox to create a flex container */
@@ -131,15 +143,15 @@ button {
   padding: 0 16px;
   display: flex;
   color: rgb(74, 74, 74);
+  border: 1px solid lightgrey;
 }
 
-.smallbox-2, .smallbox-3{
-    margin-top: 16px;
-}
 .smallbox-1 .fullscreen img, .smallbox-2 .fullscreen img, .smallbox-3 .fullscreen img{
  width: 100%;
  height: auto;
  padding-right: 16px;
+ padding-top: 16px;
+ padding-bottom: 16px;
 }
 
 .smallbox-3{
@@ -185,6 +197,7 @@ button {
     box-sizing: border-box; /* Include padding in the width calculation */
     margin: 0 16px 0 24px;
     background-color: white;
+    transition: transform 200ms; /* Animation */
 }
 
 .container-row .coursebox img {
@@ -192,7 +205,11 @@ button {
     max-width: 100%;/* Limit the maximum width of the coursebox */
     
 }
-
+.container-row .coursebox:hover {
+    background-color: lightgrey;
+    opacity: 0.9;
+    transform: scale(1.02);
+}
 .container-row .coursebox h3, p{
     margin-left: 16px;
 }
@@ -229,6 +246,9 @@ button {
 .section4-content .box-left{
     margin-top: 0;
 }
+.section4-content .smallbox-1{
+    padding: 0 16px;
+}
 
 .section4-content{
 margin-bottom: 32px;
@@ -244,6 +264,8 @@ footer{
     margin-top: 16px;
     margin-bottom: 32px;
     font-size: 10px;
+    border-top: 1px solid lightgrey;
+    padding-top: 16px
 }
 
 footer p{
@@ -264,10 +286,13 @@ footer .box-right{
 @media (max-width: 768px) {
     .container-1 {
         flex-wrap: wrap; 
+        width: 100%;
+        justify-content: center;
     }
     .container-1 img{
         margin: 0 0 32px 0;
         width: 100%;
+        
     }
     .container-1 .textbox-1{
         padding-right: 0;
@@ -276,7 +301,7 @@ footer .box-right{
     .container-1 button{
         width: 100%;
     }
-    .nav-links, nav p{
+    .nav-links, nav .nav-title{
         display: none;
     }
     nav .icons{
@@ -308,10 +333,14 @@ footer .box-right{
         display: flex;
         width: 100%;
     }
+    .smallbox-1, .smallbox-2,.smallbox-3{
+        border: none;
+    }
     .section3{
         background-color: white;
         padding-top: 32px;
         padding-bottom: 16px;
+        border-top: 1px solid lightgrey;
     }
     .section3 h2{
         padding: 0;
@@ -325,7 +354,9 @@ footer .box-right{
         display: flex;
         flex-direction: column;
     }
-    
+    .section4{
+        border-top: 1px solid lightgrey;
+    }
     .section4-content .box-right{
         display: none;
     }

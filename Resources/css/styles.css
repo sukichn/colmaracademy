@@ -269,6 +269,13 @@ footer .box-right{
         margin: 0 0 32px 0;
         width: 100%;
     }
+    .container-1 .textbox-1{
+        padding-right: 0;
+        margin-right: 16px;
+    }
+    .container-1 button{
+        width: 100%;
+    }
     .nav-links, nav p{
         display: none;
     }

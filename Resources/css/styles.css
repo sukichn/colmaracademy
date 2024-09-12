@@ -1,5 +1,5 @@
 *{
-    border: 1px solid red;
+   /* border: 1px solid red;*/
     font-family: "Work Sans";
 }
 nav{
@@ -38,6 +38,7 @@ nav .mobile-icons{
 nav p{
     display: flex;
     align-items: center;
+    font-size: x-large;
 }
 .nav-links{
     display: inline-flex;
@@ -56,6 +57,7 @@ nav p{
 .container-1{
     display: flex;
     background-color: lightgrey;
+    margin-bottom: 32px;
 }
 
 .container-1 img{
@@ -95,7 +97,6 @@ button {
 
 .container-2{
     display: flex;
-    margin-bottom: 32px;
 }
 
 .container-2 .box-left{
@@ -103,14 +104,13 @@ button {
     flex-direction: column;
     width: 60%;
     padding: 0 24px;
-    margin-top: 32px;
+    
     color: rgb(74, 74, 74)
 }
 .container-2 .box-right {
     display: flex; /* Use flexbox to create a flex container */
     flex-direction: column; /* Stack items in a column */
    width: 40%;
-   margin-top: 32px;
     
 }
 
@@ -153,6 +153,7 @@ button {
 
 .container-2 h3{
     margin-left: 16px;
+    font-weight: 550;
 }
 
 /* Section Three */
@@ -217,6 +218,49 @@ button {
     padding: 16px;
 }
 
+/* Section Four */
+.section4{
+    text-align: center;
+    background-color: white;
+    color:rgb(74, 74, 74);
+    padding: 32px 0;
+}
+
+.section4-content .box-left{
+    margin-top: 0;
+}
+
+.section4-content{
+margin-bottom: 32px;
+}
+.section4-content .smallbox-1{
+    background-color: lightgrey;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    font-size: 10px;
+}
+
+footer p{
+    margin: 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer .box-left{
+    margin-left: 24px;
+}
+footer .box-right{
+    margin-right: 24px;
+    text-align: right;
+}
 @media (max-width: 768px) {
     .container-1 {
         flex-wrap: wrap; 
@@ -232,6 +276,10 @@ button {
         display: flex;
     }
     .container-2 .box-left{
+        width: 0;
+        padding: 0;
+    }
+    .container-2 .box-left img, .container-2 .box-left h2, .container-2 .box-left h5, .container-2 .box-left h6{
         display: none;
     }
     .container-2 .box-right{
@@ -266,4 +314,17 @@ button {
         display: flex;
         flex-direction: column;
     }
+    
+    .section4-content .box-right{
+        display: none;
+    }
+
+    .section4-content .box-left{
+        width: 100%;
+        padding: 0;
+    }
+    footer .box-right{
+        display: none;
+    }
+   
 }

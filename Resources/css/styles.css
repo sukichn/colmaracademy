@@ -72,6 +72,9 @@ nav #Colmar{
 }
 .container-1 button{
     padding: 8px 0;
+    height: 50px;
+    border-radius: 5px;
+    font-size: medium;
 }
 .container-1 .textbox-1 {
     display: flex; /* Use flexbox to create a flex container */
@@ -99,6 +102,7 @@ button {
     color: white;
     background-color: rgb(74, 74, 74);
     padding: 8px 0;
+    border-radius: 5px;
 }
 
 button:hover{
@@ -335,6 +339,11 @@ footer .box-right{
     }
     .smallbox-1, .smallbox-2,.smallbox-3{
         border: none;
+        margin-bottom: 48px;
+    }
+    .container-2 h3, .container-2 p{
+        margin-top: 10px;
+        margin-bottom: 0;
     }
     .section3{
         background-color: white;
@@ -354,6 +363,7 @@ footer .box-right{
         display: flex;
         flex-direction: column;
     }
+    
     .section4{
         border-top: 1px solid lightgrey;
     }

@@ -5,7 +5,9 @@
 a{
     text-decoration:none;
 }
-
+body{
+    margin: 0;
+}
 /* Navigation bar */
 nav{
     display: inline-flex;

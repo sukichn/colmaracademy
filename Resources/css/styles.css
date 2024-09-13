@@ -397,6 +397,9 @@ footer .box-right{
         border: none;
         margin-bottom: 2.5rem;
     }
+    .smallbox-1:hover, .smallbox-2:hover,.smallbox-3:hover{
+        background-color: white;
+    }
     .container-2 .text{
         padding-left: 0;
     }

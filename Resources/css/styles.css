@@ -1,10 +1,12 @@
 *{
-   /* border: 1px solid red;*/
+  /*  border: 1px solid red;*/
     font-family: "Work Sans";
 }
 a{
     text-decoration:none;
 }
+
+/* Navigation bar */
 nav{
     display: inline-flex;
     align-items: center;
@@ -61,6 +63,7 @@ nav #Colmar{
     color: black;
 }
 
+/* Hero section */
 .container-1{
     display: flex;
     background-color: lightgrey;
@@ -109,7 +112,7 @@ button:hover{
     background-color: rgb(101, 101, 101);
     cursor: pointer;
 }
-/* Second section*/
+/* Information about the Academy */
 .container-2 a, p, h3{
     color: rgb(74, 74, 74);
 }
@@ -179,7 +182,11 @@ button:hover{
     margin: 8px 0;
 }
 
-/* Section Three */
+/* Courses */
+.courses-container{
+    padding-bottom: 32px;
+    background-color: rgb(238, 236, 236);
+}
 .section3{
     text-align: center;
     background-color: rgb(238, 236, 236);
@@ -192,7 +199,7 @@ button:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+   width: 100%;
   }
 
 .container-row .inner-container{
@@ -200,37 +207,36 @@ button:hover{
     padding-right: 72px;
     display: flex;
     margin-bottom: 32px;
+    width: 100%;
 }
-  
-.container-row .coursebox {
-    flex: 1; /* Allow the coursebox to grow and shrink within the container */
-    max-width: 33%;/* Limit the maximum width of the coursebox */
-    box-sizing: border-box; /* Include padding in the width calculation */
-    margin: 0 16px 0 24px;
+.container-row .coursebox{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin-right: 16px;
+    margin-left: 16px;
+} 
+.container-row img{
+    width: 100%;
+}
+.container-row .coursebox{
     background-color: white;
-    transition: transform 200ms ease 100ms; /* Animation */
 }
 
-.container-row .coursebox img {
-    flex: 1; /* Allow the coursebox to grow and shrink within the container */
-    max-width: 100%;/* Limit the maximum width of the coursebox */
-    
-}
 .container-row .coursebox:hover {
     background-color: lightgrey;
     opacity: 0.9;
     transform: scale(1.02);
 }
+
 .container-row .coursebox h3, p{
     margin-left: 16px;
     margin-right: 16px;
 }
 
 .container-row .coursebox h3{
-    font-weight: bold;
+    font-weight: 550;
     color: rgb(74, 74, 74);
-    margin-top: 16px;
-    margin-bottom: 8px;
 }
 
 .section3-mobile{
@@ -295,6 +301,18 @@ footer .box-right{
     text-align: right;
 }
 @media (max-width: 768px) {
+     /* Navigation */
+     .nav-links, nav .nav-title{
+        display: none;
+    }
+    nav .icons{
+        width: 100%;
+        display: flex;
+    }
+    nav .mobile-icons{
+        display: flex;
+    }
+    /* Hero section */
     .container-1 {
         flex-wrap: wrap; 
         width: 100%;
@@ -312,16 +330,8 @@ footer .box-right{
     .container-1 button{
         width: 100%;
     }
-    .nav-links, nav .nav-title{
-        display: none;
-    }
-    nav .icons{
-        width: 100%;
-        display: flex;
-    }
-    nav .mobile-icons{
-        display: flex;
-    }
+
+    /* Academy information */
     .container-2 .box-left{
         width: 0;
         padding: 0;
@@ -355,25 +365,53 @@ footer .box-right{
         margin-top: 16px;
         margin-bottom: 0;
     }
+
+    /* Courses */
+    .courses-container{
+        background-color: white;
+    }
     .section3{
         background-color: white;
         padding-top: 32px;
         padding-bottom: 16px;
         border-top: 1px solid lightgrey;
+        width: 100%;
     }
     .section3 h2{
         padding: 0;
         margin: 0;
     }
-    .container-row{
-        display: none;
+    .container-row .inner-container{
         background-color: white;
-    }
-    .section3-mobile{
-        display: flex;
+        
         flex-direction: column;
+        padding: 0;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 0;
     }
-    
+    .container-row img, p{
+        display: none;
+    }
+    .container-row .inner-container .coursebox{
+        width: 100%;
+        
+    }
+    .container-row h3{
+        background-color: rgb(238, 236, 236);
+        padding: 16px;
+        margin: 4px 16px;
+        border-radius: 5px;
+    }
+    .container-row h3:hover{
+        background-color: lightgrey;
+    }
+    .container-row .coursebox:hover {
+        background-color: white;
+        opacity: 1;
+        transform: scale(1);
+    }
+    /* Thesis exhibit */
     .section4{
         border-top: 1px solid lightgrey;
     }

@@ -18,7 +18,7 @@ h2{
     font-size: 1.5rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 h5{
     font-weight: normal;
@@ -108,13 +108,15 @@ nav #Colmar h3{
     display: flex; /* Use flexbox to create a flex container */
     flex-direction: column; /* Stack items in a column */
     text-align: left;
-    padding-right: 10%;
+    padding-right: 4rem;
     padding-bottom: 2rem;
     justify-content: center;
     color: rgb(74, 74, 74);
     margin-left: 1rem;
 }
-
+.container-1 p{
+    margin-left: 0;
+}
 button {
     border: transparent;
     color: white;
@@ -128,7 +130,7 @@ button:hover{
     cursor: pointer;
 }
 /* Information about the Academy */
-.container-2 a, p, h3{
+.container-2 a, p{
     color: rgb(74, 74, 74);
     font-weight: normal;
 }
@@ -192,7 +194,9 @@ button:hover{
 .container-2 h3{
     margin: 8px 0;
 }
-
+.container-2 .box-right h3{
+    font-weight: 550;
+}
 .container-2 p{
     margin: 8px 0;
 }

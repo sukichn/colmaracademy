@@ -86,7 +86,9 @@ nav #Colmar h3{
     font-size: 1rem;
     color: black;
 }
-
+.nav-links a:hover{
+    color: cornflowerblue
+} 
 /* Hero section */
 
 .container-1{
@@ -165,7 +167,9 @@ button:hover{
 .container-2 .box-right a{
     color: cornflowerblue;
 }
-
+.container-2 .box-right h3{
+    color:rgb(74, 74, 74);
+}
 .container-2 h5{
     display: flex;
     margin: 0;
@@ -189,6 +193,9 @@ button:hover{
     background-color: lightgrey;
 }
 
+.smallbox-1:hover, .smallbox-2:hover, .smallbox-3:hover{
+    background-color: rgb(216, 217, 229);
+} 
 .container-2 .text{
     padding-left: 1rem;
     width: 100%;
@@ -298,6 +305,9 @@ margin-bottom: 2rem;
 .section4-content .smallbox-1{
     background-color: lightgrey;
 }
+.section4-content .smallbox-1:hover{
+    background-color: rgb(216, 217, 229);
+} 
 
 /* Footer */
 footer{

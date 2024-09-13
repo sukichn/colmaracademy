@@ -21,7 +21,6 @@ nav{
 
 nav .icons{
     font-size: 32px;
-    width: 0;
     margin: 0 24px;
     height: 64px;
     display: none;
@@ -31,7 +30,7 @@ nav .icons{
 }
 
 nav .icons img{
-    height: 30px;
+    height: 34px;
 }
 
 nav .mobile-icons{
@@ -224,6 +223,7 @@ button:hover{
 }
 .container-row .coursebox h3, p{
     margin-left: 16px;
+    margin-right: 16px;
 }
 
 .container-row .coursebox h3{

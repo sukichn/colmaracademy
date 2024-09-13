@@ -1,6 +1,7 @@
 *{
   /*  border: 1px solid red;*/
     font-family: "Work Sans";
+    font-size: 16px;
 }
 a{
     text-decoration:none;
@@ -8,6 +9,22 @@ a{
 body{
     margin: 0;
 }
+
+h1{
+    margin: 0;
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+h5{
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
 /* Navigation bar */
 nav{
     display: inline-flex;
@@ -16,7 +33,7 @@ nav{
     position: sticky;
     top: 0;
     width: 100%;
-    height: 64px;
+    height: 4rem;
     background-color: white;
     color: black;
     z-index: 1;
@@ -24,9 +41,9 @@ nav{
  }
 
 nav .icons{
-    font-size: 32px;
-    margin: 0 24px;
-    height: 64px;
+    font-size: 2rem;
+    margin: 0 1.5rem;
+    height: 4rem;
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -47,34 +64,39 @@ nav .nav-title{
     font-size: x-large;
     justify-content: flex-start;
     text-transform: uppercase;
-    margin-left: 24px;
+    margin-left: 1.5rem;
 }
 
-nav #Colmar{
+nav #Academy h3{
+    font-weight: normal;
+}
+nav #Colmar h3{
     font-weight: bold;
 }
 .nav-links{
     display: inline-flex;
     align-items: center;
-    margin-right: 24px;
+    margin-right: 1.5rem;
 }
 
 .nav-links a{
-    padding-left: 16px;
-    font-size: 16px;
+    padding-left: 1rem;
+    font-size: 1rem;
     color: black;
 }
 
 /* Hero section */
+
 .container-1{
     display: flex;
     background-color: lightgrey;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .container-1 img{
     width:60%;
-    margin: 32px 24px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 .container-1 button{
     padding: 8px 0;
@@ -87,19 +109,10 @@ nav #Colmar{
     flex-direction: column; /* Stack items in a column */
     text-align: left;
     padding-right: 10%;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     justify-content: center;
-    margin-left: 16px;
-    color: rgb(74, 74, 74)
-
-}
-
-h1{
-    margin: 0;
-}
-
-h3, h5{
-    font-weight: normal;
+    color: rgb(74, 74, 74);
+    margin-left: 1rem;
 }
 
 button {
@@ -117,22 +130,23 @@ button:hover{
 /* Information about the Academy */
 .container-2 a, p, h3{
     color: rgb(74, 74, 74);
+    font-weight: normal;
 }
 .container-2{
     display: flex;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
 }
 
 .container-2 .box-left{
     display: flex;
     flex-direction: column;
     width: 60%;
-    padding: 0 24px;
+    padding: 0 1.5rem;
     color: rgb(74, 74, 74);
 }
 .container-2 .box-right {
     display: flex; /* Use flexbox to create a flex container */
-    flex-direction: column; /* Stack items in a column */
+    flex-direction: column; /* Stack itrems in a column */
    width: 40%;
     
 }
@@ -150,7 +164,7 @@ button:hover{
 }
 
 .smallbox-1, .smallbox-2, .smallbox-3{
-  padding: 0 16px;
+  padding: 0 1rem;
   display: flex;
   color: rgb(74, 74, 74);
   border: 1px solid lightgrey;
@@ -159,8 +173,8 @@ button:hover{
 .smallbox-1 .fullscreen img, .smallbox-2 .fullscreen img, .smallbox-3 .fullscreen img{
  width: 100%;
  height: auto;
- padding-top: 16px;
- padding-bottom: 16px;
+ padding-top: 1rem;
+ padding-bottom: 1rem;
 }
 
 .smallbox-3{
@@ -168,7 +182,7 @@ button:hover{
 }
 
 .container-2 .text{
-    padding-left: 16px;
+    padding-left: 1rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -176,7 +190,6 @@ button:hover{
 }
 
 .container-2 h3{
-    font-weight: 550;
     margin: 8px 0;
 }
 
@@ -186,14 +199,14 @@ button:hover{
 
 /* Courses */
 .courses-container{
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     background-color: rgb(238, 236, 236);
 }
 .section3{
     text-align: center;
     background-color: rgb(238, 236, 236);
     color:rgb(74, 74, 74);
-    padding: 32px 0;
+    padding: 2rem 0;
 }
 
 .container-row {
@@ -205,18 +218,18 @@ button:hover{
   }
 
 .container-row .inner-container{
-    padding-left: 72px;
-    padding-right: 72px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
     display: flex;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     width: 100%;
 }
 .container-row .coursebox{
     display: flex;
     flex-direction: column;
     width: 33%;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 } 
 .container-row img{
     width: 100%;
@@ -232,8 +245,8 @@ button:hover{
 }
 
 .container-row .coursebox h3, p{
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .container-row .coursebox h3{
@@ -243,16 +256,16 @@ button:hover{
 
 .section3-mobile{
     display: none;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .section3-mobile button{
     background-color: rgb(238, 236, 236);
     color: rgb(74, 74, 74);
     font-size: large;
-    margin: 4px 16px;
+    margin: 0.5rem 1rem;
     text-align: left;
-    padding: 16px;
+    padding: 1rem;
 }
 
 /* Section Four */
@@ -260,18 +273,18 @@ button:hover{
     text-align: center;
     background-color: white;
     color:rgb(74, 74, 74);
-    padding: 32px 0;
+    padding: 2rem 0;
 }
 
 .section4-content .box-left{
     margin-top: 0;
 }
 .section4-content .smallbox-1{
-    padding: 0 16px;
+    padding: 0 1rem;
 }
 
 .section4-content{
-margin-bottom: 32px;
+margin-bottom: 2rem;
 }
 .section4-content .smallbox-1{
     background-color: lightgrey;
@@ -281,11 +294,11 @@ margin-bottom: 32px;
 footer{
     display: flex;
     justify-content: space-between;
-    margin-top: 16px;
-    margin-bottom: 32px;
-    font-size: 10px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.6rem;
     border-top: 1px solid lightgrey;
-    padding-top: 16px
+    padding-top: 1rem
 }
 
 footer p{
@@ -296,13 +309,16 @@ footer a{
     color: black;
 }
 footer .box-left{
-    margin-left: 24px;
+    margin-left: 1.5rem;
 }
 footer .box-right{
-    margin-right: 24px;
+    margin-right: 1.5rem;
     text-align: right;
 }
 @media (max-width: 768px) {
+    html{
+        font-size: 12px;
+    }
      /* Navigation */
      .nav-links, nav .nav-title{
         display: none;
@@ -321,13 +337,13 @@ footer .box-right{
         justify-content: center;
     }
     .container-1 img{
-        margin: 0 0 32px 0;
+        margin: 0 0 2rem 0;
         width: 100%;
         
     }
     .container-1 .textbox-1{
         padding-right: 0;
-        margin-right: 16px;
+        margin-right: 1rem;
     }
     .container-1 button{
         width: 100%;
@@ -358,14 +374,15 @@ footer .box-right{
     }
     .smallbox-1, .smallbox-2,.smallbox-3{
         border: none;
-        margin-bottom: 48px;
+        margin-bottom: 2.5rem;
     }
     .container-2 .text{
         padding-left: 0;
     }
     .container-2 h3, .container-2 p{
-        margin-top: 16px;
+        margin-top: 1rem;
         margin-bottom: 0;
+        display: none;
     }
 
     /* Courses */
@@ -374,8 +391,8 @@ footer .box-right{
     }
     .section3{
         background-color: white;
-        padding-top: 32px;
-        padding-bottom: 16px;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
         border-top: 1px solid lightgrey;
         width: 100%;
     }
@@ -401,8 +418,8 @@ footer .box-right{
     }
     .container-row h3{
         background-color: rgb(238, 236, 236);
-        padding: 16px;
-        margin: 4px 16px;
+        padding: 1rem;
+        margin: 0.5rem 1rem;
         border-radius: 5px;
     }
     .container-row h3:hover{

@@ -390,7 +390,7 @@ footer .box-right{
         align-items: center;
         margin-bottom: 0;
     }
-    .container-row img, p{
+    .container-row img, .container-row p{
         display: none;
     }
     .container-row .inner-container .coursebox{

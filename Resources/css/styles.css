@@ -2,6 +2,9 @@
    /* border: 1px solid red;*/
     font-family: "Work Sans";
 }
+a{
+    text-decoration:none;
+}
 nav{
     display: inline-flex;
     align-items: center;
@@ -54,7 +57,6 @@ nav #Colmar{
 }
 
 .nav-links a{
-    text-decoration: none;
     padding-left: 16px;
     font-size: 16px;
     color: black;
@@ -94,7 +96,6 @@ h1{
 
 h3, h5{
     font-weight: normal;
-    margin-top: 2em;
 }
 
 button {
@@ -110,7 +111,9 @@ button:hover{
     cursor: pointer;
 }
 /* Second section*/
-
+.container-2 a, p, h3{
+    color: rgb(74, 74, 74);
+}
 .container-2{
     display: flex;
     padding-bottom: 32px;
@@ -134,7 +137,6 @@ button:hover{
     display: none;
 }
 .container-2 .box-right a{
-    text-decoration: none;
     color: cornflowerblue;
 }
 
@@ -153,7 +155,6 @@ button:hover{
 .smallbox-1 .fullscreen img, .smallbox-2 .fullscreen img, .smallbox-3 .fullscreen img{
  width: 100%;
  height: auto;
- padding-right: 16px;
  padding-top: 16px;
  padding-bottom: 16px;
 }
@@ -163,13 +164,20 @@ button:hover{
 }
 
 .container-2 .text{
-    
+    padding-left: 16px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-2 h3{
-    margin-left: 16px;
     font-weight: 550;
+    margin: 8px 0;
+}
+
+.container-2 p{
+    margin: 8px 0;
 }
 
 /* Section Three */
@@ -201,7 +209,7 @@ button:hover{
     box-sizing: border-box; /* Include padding in the width calculation */
     margin: 0 16px 0 24px;
     background-color: white;
-    transition: transform 200ms; /* Animation */
+    transition: transform 200ms ease 100ms; /* Animation */
 }
 
 .container-row .coursebox img {
@@ -277,7 +285,6 @@ footer p{
 }
 
 footer a{
-    text-decoration: none;
     color: black;
 }
 footer .box-left{
@@ -341,8 +348,11 @@ footer .box-right{
         border: none;
         margin-bottom: 48px;
     }
+    .container-2 .text{
+        padding-left: 0;
+    }
     .container-2 h3, .container-2 p{
-        margin-top: 10px;
+        margin-top: 16px;
         margin-bottom: 0;
     }
     .section3{

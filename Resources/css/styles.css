@@ -381,10 +381,13 @@ footer .box-right{
     .container-2 .text{
         padding-left: 0;
     }
-    .container-2 h3, .container-2 p{
+    .container-2 .box-left h3, .container-2 .box-left p{
         margin-top: 1rem;
         margin-bottom: 0;
         display: none;
+    }
+    .container-2 .box-right h3{
+        font-weight: 550;
     }
 
     /* Courses */
